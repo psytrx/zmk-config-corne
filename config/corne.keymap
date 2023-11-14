@@ -31,7 +31,7 @@
 &none  &kp Q  &kp W  &kp E      &kp R           &kp T    &kp Y  &kp U            &kp I      &kp O    &kp P     &none
 &none  &kp A  &kp S  &kp D      &kp F           &kp G    &kp H  &kp J            &kp K      &kp L    &kp SEMI  &none
 &none  &kp Z  &kp X  &kp C      &kp V           &kp B    &kp N  &kp M            &kp COMMA  &kp DOT  &kp FSLH  &none
-                      &kp LCTRL  &mt LSHFT BSPC  &mo 1    &mo 2  &mt RSHFT SPACE  &kp RCTRL
+                     &kp LCTRL  &mt LSHFT BSPC  &mo 1    &mo 2  &mt RSHFT SPACE  &kp RCTRL
             >;
         };
 
@@ -44,10 +44,10 @@
             //                      | GUI |     | SPC |     | ENT |     | ALT |
 
             bindings = <
-&none  &kp N1  &kp N2  &kp N3     &kp N4         &kp N5    &kp N6         &kp N7         &kp N8     &kp N9     &kp N0  &none
-&none  &none  &none  &none     &none         &none    &kp LEFT       &kp DOWN       &kp UP     &kp RIGHT  &none  &none
-&none  &none  &none  &none     &none         &none    &none         &none         &none     &none     &none  &none
-                        &kp LCTRL  &mt LSHFT DEL  &mo 1     &kp RIGHT_ALT  &mt RSHFT RET  &kp RCTRL
+&none  &kp N1  &kp N2  &kp N3     &kp N4         &kp N5    &kp N6         &kp N7         &kp N8     &kp N9    &kp N0    &none
+&none  &none   &none   &none      &none          &none     &kp RET        &kp LBRC       &kp RBRC   &kp LBKT  &kp RBKT  &none
+&none  &kp LT  &kp GT  &none      &none          &none     &none          &none          &none      &none     &none     &none
+                       &kp LCTRL  &mt LSHFT DEL  &mo 1     &kp RIGHT_ALT  &mt RSHFT RET  &kp RCTRL
             >;
         };
 
@@ -60,9 +60,9 @@
             //                      | GUI |     | SPC |     | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS         &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
-&none  &none    &none  &none     &none         &none       &kp MINUS  &kp EQUAL        &kp LBKT         &kp RBKT  &kp BSLH  &none
-&none  &none    &none  &none     &none         &none       &kp UNDER  &kp PLUS         &kp LBRC         &kp RBRC  &kp PIPE  &none
+&none  &kp EXCL   &kp AT  &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS         &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &none
+&none  &kp PG_UP  &none   &none      &none          &kp TAB      &kp LEFT   &kp DOWN         &kp UP           &kp RIGHT  &none     &none
+&none  &kp PG_DN  &none   &none      &none          &kp ESC      &none      &none            &none            &none      &none     &none
                           &kp LCTRL  &mt LSHFT DEL  &kp LGUI     &mo 2      &mt RSHFT SPACE  &kp RCTRL
             >;
         };
