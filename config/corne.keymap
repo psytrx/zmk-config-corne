@@ -2,6 +2,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+// enable quick-tap behavior
+&mt {
+  quick-tap-ms = <100>;
+};
+
 / {
   keymap {
     compatible = "zmk,keymap";
