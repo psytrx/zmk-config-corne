@@ -48,9 +48,9 @@
             //                      | GUI |     | SPC |     | ENT |     | ALT |
 
             bindings = <
-&none  &kp N1  &kp N2  &kp N3     &kp N4         &kp N5    &kp N6         &kp N7         &kp N8     &kp N9    &kp N0    &none
-&none  &none   &none   &none      &none          &none     &kp RET        &kp LBRC       &kp RBRC   &kp LBKT  &kp RBKT  &none
-&none  &kp LT  &kp GT  &none      &none          &none     &none          &none          &none      &none     &none     &none
+&none  &kp N1  &kp N2  &kp N3     &kp N4         &kp N5    &kp N6         &kp N7         &kp N8        &kp N9    &kp N0    &none
+&none  &none   &none   &none      &none          &none     &kp RET        &kp LBRC       &kp RBRC      &kp LBKT  &kp RBKT  &none
+&none  &kp LT  &kp GT  &none      &none          &none     &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP  &none     &none     &none
                        &kp LCTRL  &mt LSHFT DEL  &mo 1     &kp RIGHT_ALT  &mt RSHFT RET  &kp RCTRL
             >;
         };
