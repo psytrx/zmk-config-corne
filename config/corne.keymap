@@ -14,6 +14,16 @@
             bindings = <&kp RET>;
             key-positions = <18 19>;
         };
+
+        fg-tab {
+            bindings = <&kp TAB>;
+            key-positions = <17 16>;
+        };
+
+        vb-esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <28 29>;
+        };
     };
 
     behaviors {
