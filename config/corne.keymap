@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-// enable quick-tap behavior
 &mt {
     quick-tap-ms = <100>;
 };
@@ -13,6 +12,11 @@
         qw-escape {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
+        };
+
+        kp-return {
+            bindings = <&kp RET>;
+            key-positions = <18 19>;
         };
     };
 
