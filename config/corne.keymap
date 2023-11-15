@@ -17,11 +17,25 @@
     };
 
     behaviors {
-        ld: ld {
+        layer_dance: layer_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "ld";
+            label = "LAYER_DANCE";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&mo 2>, <&tog 3>;
+        };
+
+        nb_plus_minus: nb_plus_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NB_PLUS_MINUS";
+            #binding-cells = <0>;
+            bindings = <&kp KP_PLUS>, <&kp KP_MINUS>;
+        };
+
+        nb_mul_div: nb_mul_div {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NB_MUL_DIV";
+            #binding-cells = <0>;
+            bindings = <&kp KP_MULTIPLY>, <&kp KP_DIVIDE>;
         };
     };
 
@@ -37,10 +51,10 @@
             //                      | GUI | LWR | SPC |     | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E      &kp R          &kp T        &kp Y  &kp U      &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D      &kp F          &kp G        &kp H  &kp J      &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C      &kp V          &kp B        &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &kp LCTRL  &kp BACKSPACE  &kp LSHFT    &ld    &kp SPACE  &kp RCTRL
+&none  &kp Q  &kp W  &kp E      &kp R          &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D      &kp F          &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C      &kp V          &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &none
+                     &kp LCTRL  &kp BACKSPACE  &kp LSHFT    &layer_dance  &kp SPACE  &kp RCTRL
             >;
         };
 
@@ -53,10 +67,10 @@
             //                      | GUI |     | SPC |     | ENT |     | ALT |
 
             bindings = <
-&none  &kp N1  &kp N2  &kp N3     &kp N4   &kp N5      &kp N6   &kp N7     &kp N8     &kp N9    &kp N0    &none
-&none  &none   &none   &none      &none    &kp TAB     &kp RET  &kp LBRC   &kp RBRC   &kp LBKT  &kp RBKT  &none
-&none  &kp LT  &kp GT  &none      &none    &kp ESC     &none    &none      &none      &none     &none     &none
-                       &kp LCTRL  &kp DEL  &kp LGUI    &ld      &kp SPACE  &kp RCTRL
+&none  &kp N1  &kp N2  &kp N3     &kp N4   &kp N5      &kp N6        &kp N7     &kp N8     &kp N9    &kp N0    &none
+&none  &none   &none   &none      &none    &kp TAB     &kp RET       &kp LBRC   &kp RBRC   &kp LBKT  &kp RBKT  &none
+&none  &kp LT  &kp GT  &none      &none    &kp ESC     &none         &none      &none      &none     &none     &none
+                       &kp LCTRL  &kp DEL  &kp LGUI    &layer_dance  &kp SPACE  &kp RCTRL
             >;
         };
 
@@ -69,19 +83,19 @@
             //                      | GUI |     | SPC |     | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL   &kp AT  &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET   &kp AMPS      &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &none
-&none  &kp PG_UP  &none   &none      &none       &none        &kp LEFT    &kp DOWN      &kp UP           &kp RIGHT  &none     &none
-&none  &kp PG_DN  &none   &none      &none       &none        &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &none      &none     &none
-                          &kp LCTRL  &kp DELETE  &kp LALT     &ld         &kp SPACE     &kp RCTRL
+&none  &kp EXCL  &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &none
+&none  &kp HOME  &kp PG_UP  &none      &none       &none        &kp LEFT      &kp DOWN      &kp UP           &kp RIGHT  &none     &none
+&none  &kp END   &kp PG_DN  &none      &none       &none        &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &none      &none     &none
+                            &kp LCTRL  &kp DELETE  &kp LALT     &layer_dance  &kp SPACE     &kp RCTRL
             >;
         };
 
         num_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_N1  &kp KP_N1  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_N1  &kp KP_N1  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_N1  &kp KP_N1  &trans  &trans
-                        &trans  &trans  &trans    &ld     &kp KP_NUMBER_0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_plus_minus  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_ENTER  &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_mul_div     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_N1        &kp KP_N1     &kp KP_N1  &kp KP_EQUAL    &trans
+                        &trans  &trans  &trans    &layer_dance  &kp KP_NUMBER_0  &kp KP_COMMA
             >;
         };
     };
