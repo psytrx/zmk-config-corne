@@ -29,6 +29,11 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <3 7>;
         };
+
+        hj-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
+        };
     };
 
     behaviors {
