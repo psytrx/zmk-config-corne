@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ld";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 1>, <&mo 2>, <&tog 3>;
         };
     };
 
@@ -83,6 +83,15 @@
 &none  &kp PG_UP  &none   &none      &none       &none        &kp LEFT    &kp DOWN      &kp UP           &kp RIGHT  &none     &none
 &none  &kp PG_DN  &none   &none      &none       &none        &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &none      &none     &none
                           &kp LCTRL  &kp DELETE  &kp LALT     &ld         &kp SPACE     &kp RCTRL
+            >;
+        };
+
+        num_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_N1  &kp KP_N1  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_N1  &kp KP_N1  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_N1  &kp KP_N1  &trans  &trans
+                        &trans  &trans  &trans    &ld     &kp KP_NUMBER_0  &trans
             >;
         };
     };
