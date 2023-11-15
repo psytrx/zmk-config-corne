@@ -14,6 +14,21 @@
             bindings = <&kp TAB>;
             key-positions = <17 16>;
         };
+
+        umlaut_ae {
+            bindings = <&kp LS(APOS)>;
+            key-positions = <13 3>;
+        };
+
+        umlaut_oe {
+            bindings = <&kp SEMI>;
+            key-positions = <9 3>;
+        };
+
+        umlaut_ue {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 10>;
+        };
     };
 
     behaviors {
