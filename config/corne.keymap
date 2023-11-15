@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_DANCE";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>, <&tog 3>;
+            bindings = <&mo 1>, <&mo 2>, <&tog 3>, <&mo 4>;
         };
 
         nb_plus_minus: nb_plus_minus {
@@ -111,6 +111,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp KP_ENTER  &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_mul_div     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_N1        &kp KP_N1     &kp KP_N1  &kp KP_EQUAL    &trans
                         &trans  &trans  &trans    &layer_dance  &kp KP_NUMBER_0  &kp KP_COMMA
+            >;
+        };
+
+        f_keys_layer {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp F11  &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp F12  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
