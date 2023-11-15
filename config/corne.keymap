@@ -98,28 +98,28 @@
             //                      | GUI |     | SPC |     | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL  &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR    &kp RPAR          &none
-&none  &kp HOME  &kp PG_UP  &none      &none       &none        &kp LEFT      &kp DOWN      &kp UP           &kp RIGHT   &kp C_PLAY_PAUSE  &none
-&none  &kp END   &kp PG_DN  &none      &none       &none        &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PREV  &kp C_NEXT        &none
-                            &kp LCTRL  &kp DELETE  &kp LALT     &layer_dance  &kp SPACE     &kp RCTRL
+&none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR    &kp RPAR          &none
+&none  &kp HOME  &kp PG_UP  &none     &none     &none        &kp LEFT      &kp DOWN      &kp UP           &kp RIGHT   &kp C_PLAY_PAUSE  &none
+&none  &kp END   &kp PG_DN  &none     &none     &none        &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PREV  &kp C_NEXT        &none
+                            &none     &none     &kp LALT     &layer_dance  &none         &none
             >;
         };
 
         num_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_plus_minus  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_ENTER  &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_mul_div     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_N1        &kp KP_N1     &kp KP_N1  &kp KP_EQUAL    &trans
-                        &trans  &trans  &trans    &layer_dance  &kp KP_NUMBER_0  &kp KP_COMMA
+&none  &none  &none  &none  &none  &none    &none         &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_plus_minus  &none
+&none  &none  &none  &none  &none  &none    &kp KP_ENTER  &kp KP_N1        &kp KP_N1     &kp KP_N1  &nb_mul_div     &none
+&none  &none  &none  &none  &none  &none    &none         &kp KP_N1        &kp KP_N1     &kp KP_N1  &kp KP_EQUAL    &none
+                     &none  &none  &none    &layer_dance  &kp KP_NUMBER_0  &kp KP_COMMA
             >;
         };
 
         f_keys_layer {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp F11  &none
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp F12  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &kp F11  &none
+&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &kp F12  &none
+                       &none   &none   &none     &none   &none   &none
             >;
         };
     };
