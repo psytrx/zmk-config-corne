@@ -51,7 +51,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_DANCE";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>, <&tog 3>, <&mo 4>;
         };
 
         nb_plus_minus: nb_plus_minus {
