@@ -34,6 +34,16 @@
             bindings = <&kp ENTER>;
             key-positions = <18 19>;
         };
+
+        left-gui {
+            bindings = <&kp LGUI>;
+            key-positions = <37 38>;
+        };
+
+        right-alt {
+            bindings = <&kp RALT>;
+            key-positions = <39 40>;
+        };
     };
 
     behaviors {
