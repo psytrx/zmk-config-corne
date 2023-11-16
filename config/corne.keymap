@@ -52,7 +52,7 @@
             label = "LAYER_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 1>, <&mo 2>, <&mo 3>, <&mo 4>;
+            bindings = <&mo 1>, <&mo 2>, <&tog 3>, <&mo 4>;
         };
 
         nb_plus_minus: nb_plus_minus {
