@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -52,6 +52,7 @@
             label = "LAYER_DANCE";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&mo 2>, <&tog 3>, <&mo 4>;
+            tapping-term-ms = <500>;
         };
 
         nb_plus_minus: nb_plus_minus {
