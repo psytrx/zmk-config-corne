@@ -97,7 +97,7 @@
             bindings = <
 &none  &kp N1    &kp N2     &kp N3           &kp N4   &kp N5        &kp N6        &kp N7         &kp N8             &kp N9      &kp N0      &none
 &none  &kp HOME  &kp PG_UP  &kp PRINTSCREEN  &none    &kp TAB       &kp RET       &kp RA(N7)     &kp RA(N0)         &kp RA(N8)  &kp RA(N9)  &none
-&none  &kp END   &kp PG_DN  &none            &none    &kp ESC       &kp GRAVE     &kp BACKSLASH  &kp RIGHT_BRACKET  &kp EQUAL   &kp MINUS   &none
+&none  &kp END   &kp PG_DN  &none            &kp F12  &kp ESC       &kp GRAVE     &kp BACKSLASH  &kp RIGHT_BRACKET  &kp EQUAL   &kp MINUS   &none
                             &kp LCTRL        &kp DEL  &kp LSHIFT    &layer_dance  &kp SPACE      &kp RCTRL
             >;
         };
