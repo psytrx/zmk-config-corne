@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_DANCE";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>, <&tog 3>, <&mo 4>;
+            bindings = <&mo 1>, <&mo 2>, <&tog 3>, <&mo 4>, <&mo 5>;
 
             tapping-term-ms = <500>;
         };
@@ -113,20 +113,19 @@
 
         media_layer {
             bindings = <
-&none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR    &kp RPAR       &none
-&none  &kp HOME  &kp PG_UP  &none     &none     &none        &kp LEFT      &kp DOWN      &kp UP           &kp RIGHT   &kp BACKSLASH  &none
-&none  &kp END   &kp PG_DN  &none     &none     &none        &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_NEXT  &kp C_PP       &none
-                            &none     &none     &none        &layer_dance  &none         &none
+&none  &none  &none  &none  &none  &none    &kp C_PREV    &kp C_NEXT    &none         &none  &none  &none
+&none  &none  &none  &none  &none  &none    &kp C_PP      &none         &none         &none  &none  &none
+&none  &none  &none  &none  &none  &none    &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &none  &none  &none
+                     &none  &none  &none    &layer_dance  &none         &none
             >;
         };
-
 
         num_layer {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none      &kp N7  &kp N8   &kp N9  &nb_plus_minus  &none
 &none  &none  &none  &none  &none  &none    &kp ENTER  &kp N4  &kp N5   &kp N6  &nb_mul_div     &none
 &none  &none  &none  &none  &none  &none    &none      &kp N1  &kp N2   &kp N3  &kp KP_EQUAL    &none
-                     &none  &none  &none    &tog 3     &kp N0  &kp DOT
+                     &none  &none  &none    &tog 4     &kp N0  &kp DOT
             >;
         };
 
