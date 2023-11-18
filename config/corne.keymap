@@ -129,10 +129,10 @@
 
         num_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none         &kp N7  &kp N8   &kp N9  &nb_plus_minus  &none
-&none  &none  &none  &none  &none  &none    &kp ENTER     &kp N4  &kp N5   &kp N6  &nb_mul_div     &none
-&none  &none  &none  &none  &none  &none    &none         &kp N1  &kp N2   &kp N3  &kp KP_EQUAL    &none
-                     &none  &none  &none    &layer_dance  &kp N0  &kp DOT
+&none  &none  &none  &none  &none  &none    &none      &kp N7  &kp N8   &kp N9  &nb_plus_minus  &none
+&none  &none  &none  &none  &none  &none    &kp ENTER  &kp N4  &kp N5   &kp N6  &nb_mul_div     &none
+&none  &none  &none  &none  &none  &none    &none      &kp N1  &kp N2   &kp N3  &kp KP_EQUAL    &none
+                     &none  &none  &none    &tog 3     &kp N0  &kp DOT
             >;
         };
 
