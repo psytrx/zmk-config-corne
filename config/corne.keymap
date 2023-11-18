@@ -104,9 +104,9 @@
 
         raise_layer {
             bindings = <
-&none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR       &none
-&none  &kp HOME  &kp PG_UP  &none     &none     &none        &kp LEFT      &kp DOWN  &kp UP           &kp RIGHT  &kp BACKSLASH  &none
-&none  &kp END   &kp PG_DN  &none     &none     &none        &none         &none     &none            &none      &none          &none
+&none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR           &none
+&none  &kp HOME  &kp PG_UP  &none     &none     &none        &kp LEFT      &kp DOWN  &kp UP           &kp RIGHT  &kp RIGHT_BRACKET  &none
+&none  &kp END   &kp PG_DN  &none     &none     &none        &none         &none     &none            &none      &kp BACKSLASH      &none
                             &none     &none     &none        &layer_dance  &none     &none
             >;
         };
