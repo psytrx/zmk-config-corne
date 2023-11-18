@@ -44,6 +44,11 @@
             bindings = <&kp RALT>;
             key-positions = <39 40>;
         };
+
+        eszett {
+            bindings = <&kp SLASH>;
+            key-positions = <14 6>;
+        };
     };
 
     behaviors {
