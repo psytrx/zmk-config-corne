@@ -49,6 +49,11 @@
             bindings = <&kp SLASH>;
             key-positions = <14 6>;
         };
+
+        vb-esc {
+            bindings = <&kp ESC>;
+            key-positions = <28 29>;
+        };
     };
 
     behaviors {
