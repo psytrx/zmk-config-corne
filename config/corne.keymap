@@ -37,12 +37,12 @@
 
         left-gui {
             bindings = <&kp LGUI>;
-            key-positions = <37 38>;
+            key-positions = <37 36>;
         };
 
         right-alt {
             bindings = <&kp RALT>;
-            key-positions = <39 40>;
+            key-positions = <40 41>;
         };
 
         eszett {
