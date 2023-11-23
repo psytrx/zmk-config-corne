@@ -6,16 +6,6 @@
     combos {
         compatible = "zmk,combos";
 
-        qw-escape {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-        };
-
-        fg-tab {
-            bindings = <&kp TAB>;
-            key-positions = <17 16>;
-        };
-
         umlaut_ae {
             bindings = <&kp APOS>;
             key-positions = <13 3>;
@@ -31,24 +21,9 @@
             key-positions = <3 7>;
         };
 
-        hj-enter {
-            bindings = <&kp ENTER>;
-            key-positions = <18 19>;
-        };
-
-        left-gui {
-            bindings = <&kp LGUI>;
-            key-positions = <38 39>;
-        };
-
         eszett {
             bindings = <&kp MINUS>;
             key-positions = <14 6>;
-        };
-
-        vb-esc {
-            bindings = <&kp ESC>;
-            key-positions = <28 29>;
         };
     };
 
@@ -75,6 +50,20 @@
             #binding-cells = <0>;
             bindings = <&kp KP_MULTIPLY>, <&kp KP_DIVIDE>;
         };
+
+        l1_curlies: l1_curlies {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L1_CURLIES";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7)>, <&kp RA(N0)>;
+        };
+
+        l1_brackets: l1_brackets {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L1_BRACKETS";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N8)>, <&kp RA(N9)>;
+        };
     };
 
     keymap {
@@ -85,25 +74,25 @@
 &none  &kp Q  &kp W  &kp E      &kp R          &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P     &none
 &none  &kp A  &kp S  &kp D      &kp F          &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI  &none
 &none  &kp Z  &kp X  &kp C      &kp V          &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &kp LCTRL  &kp BACKSPACE  &kp LSHFT    &layer_dance  &kp SPACE  &kp RCTRL
+                     &kp LCTRL  &kp BACKSPACE  &kp LSHFT    &layer_dance  &kp SPACE  &kp LGUI
             >;
         };
 
         lower_layer {
             bindings = <
-&none  &kp N1                &kp N2  &kp N3    &kp N4   &kp N5        &kp N6        &kp N7         &kp N8             &kp N9      &kp N0      &none
-&none  &none                 &none   &none     &none    &kp TAB       &kp RET       &kp RA(N7)     &kp RA(N0)         &kp RA(N8)  &kp RA(N9)  &none
-&none  &kp NON_US_BACKSLASH  &none   &none     &none    &kp ESC       &kp GRAVE     &kp BACKSLASH  &kp RIGHT_BRACKET  &kp EQUAL   &kp MINUS   &none
-                                     &kp RALT  &kp DEL  &kp LSHIFT    &layer_dance  &kp SPACE      &kp RCTRL
+&none  &kp N1                &kp N2  &kp N3     &kp N4   &kp N5        &kp N6        &kp N7       &kp N8        &kp N9             &kp N0         &none
+&none  &none                 &none   &none      &none    &kp TAB       &kp RET       &l1_curlies  &l1_brackets  &kp RIGHT_BRACKET  &kp BACKSLASH  &none
+&none  &kp NON_US_BACKSLASH  &none   &none      &none    &kp ESC       &kp GRAVE     &none        &kp EQUAL     &kp DOT            &kp MINUS      &none
+                                     &kp LCTRL  &kp DEL  &kp LSHIFT    &layer_dance  &kp SPACE    &kp RALT
             >;
         };
 
         raise_layer {
             bindings = <
-&none  &kp EXCL  &kp AT     &kp HASH         &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &none
-&none  &kp HOME  &kp PG_UP  &kp PRINTSCREEN  &none     &none        &kp LEFT      &kp DOWN  &kp UP           &kp RIGHT  &none     &none
-&none  &kp END   &kp PG_DN  &none            &none     &none        &none         &none     &none            &none      &none     &none
-                            &none            &none     &none        &layer_dance  &none     &none
+&none  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)         &kp LS(N6)  &kp LS(N7)    &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
+&none  &none       &kp HOME    &kp PG_UP   &none       &kp PRINTSCREEN    &kp LEFT    &kp DOWN      &kp UP      &kp RIGHT   &none       &none
+&none  &none       &kp END     &kp PG_DN   &none       &none              &none       &none         &none       &none       &none       &none
+                               &none       &none       &none              &none       &layer_dance  &none
             >;
         };
 
