@@ -115,8 +115,8 @@
         raise_layer {
             bindings = <
 &none  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)         &kp LS(N6)  &kp LS(N7)    &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&none  &none       &kp HOME    &kp PG_UP   &none       &kp PRINTSCREEN    &kp LEFT    &kp DOWN      &kp UP      &kp RIGHT   &none       &none
-&none  &none       &kp END     &kp PG_DN   &none       &none              &none       &none         &none       &none       &none       &none
+&none       &kp HOME    &kp PG_UP   &none    &none          &kp PRINTSCREEN    &kp LEFT    &kp DOWN      &kp UP      &kp RIGHT   &none       &none
+&none       &kp END     &kp PG_DN   &none  &none            &none              &none       &none         &none       &none       &none       &none
                                &none       &none       &none              &none       &layer_dance  &none
             >;
         };
