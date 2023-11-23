@@ -86,55 +86,55 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E      &kp R          &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D      &kp F          &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C      &kp V          &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &kp LCTRL  &kp BACKSPACE  &kp LSHFT    &layer_dance  &kp SPACE  &kp RCTRL
+&trans  &kp Q  &kp W  &kp E      &kp R          &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D      &kp F          &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z  &kp X  &kp C      &kp V          &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &kp LCTRL  &kp BACKSPACE  &kp LSHFT    &layer_dance  &kp SPACE  &kp RCTRL
             >;
         };
 
         symbol_layer {
             bindings = <
-&none  &kp N1           &kp N2     &kp N3     &kp N4   &kp N5        &kp N6        &kp N7      &kp N8         &kp N9             &kp N0         &none
-&none  &kp NON_US_BSLH  &kp GRAVE  &kp EQUAL  &none    &kp TAB       &kp RET       &kp RA(N7)  &kp RA(N0)     &kp RIGHT_BRACKET  &kp BACKSLASH  &none
-&none  &none            &none      &none      &none    &kp ESC       &none         &kp RA(N8)  &kp RA(EQUAL)  &kp DOT            &kp MINUS      &none
-                                   &kp LCTRL  &kp DEL  &kp LSHIFT    &layer_dance  &kp SPACE   &kp RALT
+&trans  &kp N1           &kp N2     &kp N3     &kp N4   &kp N5     &kp N6   &kp N7      &kp N8         &kp N9             &kp N0         &trans
+&trans  &kp NON_US_BSLH  &kp GRAVE  &kp EQUAL  &trans   &kp TAB    &kp RET  &kp RA(N7)  &kp RA(N0)     &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans  &trans           &trans     &trans     &trans   &kp ESC    &trans   &kp RA(N8)  &kp RA(EQUAL)  &kp DOT            &kp MINUS      &trans
+                                    &trans     &kp DEL  &trans     &trans   &trans      &kp RALT
             >;
         };
 
         navigation_layer {
             bindings = <
-&none  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)         &kp LS(N6)    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&none  &kp HOME    &kp PG_UP   &none       &none       &kp PRINTSCREEN    &kp LEFT      &kp DOWN    &kp UP      &kp RIGHT   &none       &none
-&none  &kp END     &kp PG_DN   &none       &none       &none              &none         &none       &none       &none       &none       &none
-                               &kp LCTRL   &kp LALT    &kp LSHFT          &layer_dance  &kp SPACE   &kp RALT
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)         &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
+&trans  &kp HOME    &kp PG_UP   &trans      &trans      &kp PRINTSCREEN    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
+&trans  &kp END     &kp PG_DN   &trans      &trans      &trans             &trans      &trans      &trans      &trans      &trans      &trans
+                                &trans      &kp LALT    &trans             &trans      &trans      &kp RALT
             >;
         };
 
         media_layer {
             bindings = <
-&none  &none  &none  &none       &none       &none         &kp C_PREV    &kp C_NEXT    &none          &none  &none  &none
-&none  &none  &none  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR    &kp C_PP      &none         &none          &none  &none  &none
-&none  &none  &none  &none       &none       &none         &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP   &none  &none  &none
-                     &kp LCTRL   &kp LALT    &kp LSHIFT    &layer_dance  &kp SPACE     &kp RIGHT_ALT
+&trans  &trans  &trans  &trans      &trans      &trans        &kp C_PREV  &kp C_NEXT    &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR    &kp C_PP    &trans        &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans      &trans        &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans  &trans
+                        &trans      &trans      &trans        &trans      &trans        &trans
             >;
         };
 
         numblock_layer {
             bindings = <
-&none  &none  &none  &none      &none     &none             &none      &kp N7  &kp N8   &kp N9  &nb_plus_minus  &none
-&none  &none  &none  &none      &none     &none             &kp ENTER  &kp N4  &kp N5   &kp N6  &nb_mul_div     &none
-&none  &none  &none  &none      &none     &none             &none      &kp N1  &kp N2   &kp N3  &kp KP_EQUAL    &none
-                     &kp LCTRL  &kp LALT  &kp LEFT_SHIFT    &tog 4     &kp N0  &kp DOT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp N7  &kp N8   &kp N9  &nb_plus_minus  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER  &kp N4  &kp N5   &kp N6  &nb_mul_div     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp N1  &kp N2   &kp N3  &kp KP_EQUAL    &trans
+                        &trans  &trans  &trans    &tog 4     &kp N0  &kp DOT
             >;
         };
 
         f_keys_layer {
             bindings = <
-&none  &kp F1  &kp F2  &kp F3     &kp F4    &kp F5        &kp F6        &kp F7     &kp F8         &kp F9  &kp F10  &none
-&none  &none   &none   &none      &none     &none         &none         &none      &none          &none   &kp F11  &none
-&none  &none   &none   &none      &none     &none         &none         &none      &none          &none   &kp F12  &none
-                       &kp LCTRL  &kp LALT  &kp LSHIFT    &layer_dance  &kp SPACE  &kp RIGHT_ALT
+&trans  &kp F1  &kp F2  &kp F3  &kp F4    &kp F5    &kp F6  &kp F7  &kp F8         &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans         &trans  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans         &trans  &kp F12  &trans
+                        &trans  &kp LALT  &trans    &trans  &trans  &kp RIGHT_ALT
             >;
         };
     };
