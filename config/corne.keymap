@@ -25,6 +25,26 @@
             bindings = <&kp MINUS>;
             key-positions = <14 6>;
         };
+
+        vb-esc {
+            bindings = <&kp ESC>;
+            key-positions = <28 29>;
+        };
+
+        hj-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
+        };
+
+        fg-tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+        };
+
+        qw-esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     behaviors {
