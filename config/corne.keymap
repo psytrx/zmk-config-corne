@@ -65,20 +65,6 @@
             #binding-cells = <0>;
             bindings = <&kp KP_MULTIPLY>, <&kp KP_DIVIDE>;
         };
-
-        l1_curlies: l1_curlies {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L1_CURLIES";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N7)>, <&kp RA(N0)>;
-        };
-
-        l1_brackets: l1_brackets {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L1_BRACKETS";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N8)>, <&kp RA(N9)>;
-        };
     };
 
     keymap {
@@ -95,9 +81,9 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp N1           &kp N2     &kp N3     &kp N4   &kp N5     &kp N6   &kp N7      &kp N8         &kp N9             &kp N0         &trans
-&trans  &kp NON_US_BSLH  &kp GRAVE  &kp EQUAL  &trans   &kp TAB    &kp RET  &kp RA(N7)  &kp RA(N0)     &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans           &trans     &trans     &trans   &kp ESC    &trans   &kp RA(N8)  &kp RA(EQUAL)  &kp DOT            &kp MINUS      &trans
+&trans  &kp N1           &kp N2     &kp N3     &kp N4   &kp N5     &kp N6   &kp N7      &kp N8      &kp N9             &kp N0         &trans
+&trans  &kp NON_US_BSLH  &kp GRAVE  &kp EQUAL  &trans   &kp TAB    &kp RET  &kp RA(N7)  &kp RA(N0)  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans  &trans           &trans     &trans     &trans   &kp ESC    &trans   &kp RA(N8)  &kp RA(N9)  &kp DOT            &kp MINUS      &trans
                                     &trans     &kp DEL  &trans     &trans   &trans      &kp RALT
             >;
         };
