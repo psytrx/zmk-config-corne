@@ -9,36 +9,43 @@
         umlaut_ae {
             bindings = <&kp APOS>;
             key-positions = <13 3>;
+            timeout-ms = <100>;
         };
 
         umlaut_oe {
             bindings = <&kp SEMI>;
             key-positions = <9 3>;
+            timeout-ms = <100>;
         };
 
         umlaut_ue {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <3 7>;
+            timeout-ms = <100>;
         };
 
         eszett {
             bindings = <&kp MINUS>;
             key-positions = <14 6>;
+            timeout-ms = <100>;
         };
 
         vb-esc {
             bindings = <&kp ESC>;
             key-positions = <28 29>;
+            timeout-ms = <100>;
         };
 
         fg-tab {
             bindings = <&kp TAB>;
             key-positions = <16 17>;
+            timeout-ms = <100>;
         };
 
         lgui {
             bindings = <&kp LGUI>;
             key-positions = <36 37>;
+            timeout-ms = <100>;
         };
     };
 
